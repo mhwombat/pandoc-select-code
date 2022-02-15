@@ -1,0 +1,22 @@
+cabal-version:      2.4
+name:               pandoc-select-code
+version:            0.1.0.0
+description:        Pandoc filter to extract only the code blocks from a source file, discarding all other elements.
+synopsis:           Pandoc filter to extract only the code blocks.
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Amy de Buitléir
+maintainer:         amy@nualeargais.ie
+copyright:          2020-2021 Amy de Buitléir
+category:           Text
+extra-source-files: CHANGELOG.md
+
+executable pandoc-select-code
+  default-language: Haskell2010
+  main-is:        SelectCode.hs
+  build-depends:
+    base                              >= 4.14.3 && < 4.15,
+    pandoc                            >= 2.14.0 && < 2.15,
+    pandoc-types                      >= 1.22.1 && < 1.23,
+  ghc-options:
+    -threaded -rtsopts -with-rtsopts=-N -Wall -Wunused-packages
