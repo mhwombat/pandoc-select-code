@@ -4,4 +4,3 @@ in
   pkgs.haskellPackages.developPackage {
     root = ./.;
   }
-
