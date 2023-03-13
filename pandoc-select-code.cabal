@@ -1,6 +1,6 @@
 cabal-version:      2.4
 name:               pandoc-select-code
-version:            0.1.0.0
+version:            0.1.0.1
 description:        Pandoc filter to extract only the code blocks from a source file, discarding all other elements.
 synopsis:           Pandoc filter to extract only the code blocks.
 license:            BSD-3-Clause
@@ -16,8 +16,8 @@ executable pandoc-select-code
   default-extensions: ImportQualifiedPost
   main-is:        SelectCode.hs
   build-depends:
-    base                              >= 4.14.3 && < 4.16,
-    pandoc                            >= 2.14.0 && < 2.18,
-    pandoc-types                      >= 1.22.1 && < 1.23,
+    base >= 4.16.3 && < 4.17,
+    pandoc >= 2.19.2 && < 2.20,
+    pandoc-types >= 1.22.2 && < 1.23
   ghc-options:
     -threaded -rtsopts -with-rtsopts=-N -Wall -Wunused-packages
