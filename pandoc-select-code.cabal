@@ -4,9 +4,9 @@ version:         0.1.0.2
 synopsis:        Pandoc filter to extract only the code blocks.
 description:
   For more information and a tutorial on how to use this package,
-  please see the README at <https://github.com/mhwombat/pandoc-columns#readme>.
-homepage:        https://github.com/mhwombat/pandoc-columns
-bug-reports:     https://github.com/mhwombat/pandoc-columns/issues
+  please see the README at <https://github.com/mhwombat/pandoc-select-code#readme>.
+homepage:        https://github.com/mhwombat/pandoc-select-code
+bug-reports:     https://github.com/mhwombat/pandoc-select-code/issues
 license:         BSD-3-Clause
 license-file:    LICENSE
 author:          Amy de Buitléir
