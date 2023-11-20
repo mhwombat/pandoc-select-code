@@ -1,6 +1,6 @@
 cabal-version:   3.0
 name:            pandoc-select-code
-version:         0.1.0.2
+version:         1.0.0
 synopsis:        Pandoc filter to extract only the code blocks.
 description:
   For more information and a tutorial on how to use this package,
