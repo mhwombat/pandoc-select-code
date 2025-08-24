@@ -1,6 +1,6 @@
 cabal-version:   3.0
 name:            pandoc-select-code
-version:         1.0.0
+version:         1.0.0.1
 synopsis:        Pandoc filter to extract only the code blocks.
 description:
   For more information and a tutorial on how to use this package,
@@ -16,12 +16,16 @@ category:        Text
 build-type:      Simple
 extra-doc-files: CHANGELOG.md
 
+source-repository head
+  type:              git
+  location:          https://github.com/mhwombat/pandoc-select-code.git
+
 executable pandoc-select-code
   default-language: Haskell2010
   default-extensions: ImportQualifiedPost
   main-is:        SelectCode.hs
   build-depends:
-    base >= 4.16.4 && < 4.17,
-    pandoc >= 2.19.2 && < 2.20,
-    pandoc-types >= 1.22.2 && < 1.23
+    base >= 4.16.4 && < 5,
+    pandoc >= 2.19.2 && < 4,
+    pandoc-types >= 1.22.2 && < 1.24
   ghc-options: -Wall -Wunused-packages
